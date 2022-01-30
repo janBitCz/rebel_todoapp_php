@@ -2,7 +2,7 @@
     /**
      * INSERT FORM
      */
-    var form = $("#add-form"),
+    let form = $("#add-form"),
         list = $("#item-list"),
         input = form.find("#text");
 
@@ -12,7 +12,7 @@
     /**
      * SETTINGS
      */
-    var animation = {
+    let animation = {
         startColor: "#00bc8c",
         endColor: list.find("li").css("backgroundColor") || "#303030",
         delay: 200,
@@ -21,7 +21,7 @@
     form.on("submit", function (event) {
         event.preventDefault();
 
-        var req = $.ajax({
+        let req = $.ajax({
             url: form.attr("action"),
             type: "POST",
             data: form.serialize(),
@@ -31,7 +31,7 @@
         req.done(function (data) {
             if (data.status === "success") {
                 $.ajax({ url: baseURL }).done(function (html) {
-                    var newItem = $(html).find("#item-" + data.id);
+                    let newItem = $(html).find("#item-" + data.id);
 
                     newItem
                         .appendTo(list)
