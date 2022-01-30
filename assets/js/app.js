@@ -2,6 +2,7 @@
     /**
      * INSERT FORM
      */
+
     let form = $("#add-form"),
         list = $("#item-list"),
         input = form.find("#text");
@@ -12,6 +13,7 @@
     /**
      * SETTINGS
      */
+
     let animation = {
         startColor: "#00bc8c",
         endColor: list.find("li").css("backgroundColor") || "#303030",
@@ -54,13 +56,16 @@
 
     /**
      * EDIT FORM
-     */
+     */ 
+
     $("#edit-form").find("#text").select();
 
     /**
      * DELETE FORM
      */
+
     $("#delete-form").on("submit", function (event) {
         return confirm("Jste si jistý?");
     });
+
 })(jQuery);
