@@ -11,7 +11,7 @@
 ?>
 
     <div class="page-header">
-        <h1>APP TODO - Edit</h1>
+        <h1>APP TODO - Edit item</h1>
     </div>
 
 	<div class="row">
@@ -21,9 +21,9 @@
 			</p>
 			<p class="form-group">
 				<input name="id" type="hidden" value="<?php echo $_GET['id'] ?>">
-				<input class="btn-sm btn-danger" type="submit" value="edit item">
+				<input class="btn-sm btn-danger" type="submit" value="Edit item">
 				<span class="controls">
-					<a href="<?php echo $base_url ?>" class="back-link text-muted">back</a>
+					<a href="<?php echo $base_url ?>" class="back-link text-muted">Back</a>
 				</span>
 			</p>
 		</form>

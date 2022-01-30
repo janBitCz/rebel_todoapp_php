@@ -12,7 +12,7 @@
                 echo '<li id="item-'. $item['id'] .'" class="list-group-item">';
                 echo    $item['text'];
                 echo '  <div class="controls pull-right">';
-                echo '      <a href="edit.php?id='. $item['id'] .'" class="edit-link">edit</a>';
+                echo '      <a href="edit.php?id='. $item['id'] .'" class="edit-link">Edit</a>';
                 echo '      <a href="delete.php?id='. $item['id'] .'" class="delete-link text-muted glyphicon glyphicon-remove"></a>';
                 echo '  </div>';
                 echo '</li>';

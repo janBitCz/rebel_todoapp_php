@@ -23,7 +23,7 @@
 				<input name="id" type="hidden" value="<?php echo $_GET['id'] ?>">
 				<input class="btn-sm btn-danger" type="submit" value="delete item">
 				<span class="controls">
-					<a href="<?php echo $base_url ?>" class="back-link text-muted">back</a>
+					<a href="<?php echo $base_url ?>" class="back-link text-muted">Back</a>
 				</span>
 			</p>
 		</form>
