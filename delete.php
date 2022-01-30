@@ -11,7 +11,7 @@
 ?>
 
     <div class="page-header">
-        <h1>APP TODO LIST - DELETE</h1>
+        <h1>APP TODO - Delete</h1>
     </div>
 
 	<div class="row">
