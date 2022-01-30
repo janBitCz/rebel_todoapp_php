@@ -21,7 +21,7 @@
 			</p>
 			<p class="form-group">
 				<input name="id" type="hidden" value="<?php echo $_GET['id'] ?>">
-				<input class="btn-sm btn-danger" type="submit" value="delete item">
+				<input class="btn-sm btn-danger" type="submit" value="Delete item">
 				<span class="controls">
 					<a href="<?php echo $base_url ?>" class="back-link text-muted">Back</a>
 				</span>
