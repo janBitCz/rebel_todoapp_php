@@ -3,7 +3,7 @@
     <div class="page-header">
         <h1>APP TODO LIST</h1>
     </div>
-
+    
     <?php $data = $database->select('items', [ 'id', 'text' ]); ?>
 
     <ul id="item-list" class="list-group col-sm-6">
