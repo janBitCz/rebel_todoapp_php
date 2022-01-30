@@ -61,6 +61,6 @@
      * DELETE FORM
      */
     $("#delete-form").on("submit", function (event) {
-        return confirm("for sure?");
+        return confirm("Jste si jistý?");
     });
 })(jQuery);
