@@ -56,7 +56,6 @@ function get_item()
 }
 
 
-function is_ajax()
-{
+function is_ajax() {
 	return ( !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest' );
 }

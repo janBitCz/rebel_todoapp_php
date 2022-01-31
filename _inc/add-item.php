@@ -20,6 +20,7 @@
 		]);
 
 		die( $message );
+	
 	} else {
 		header("Location: $base_url/index.php");
 		die();
