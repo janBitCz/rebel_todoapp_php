@@ -1,7 +1,7 @@
 <?php
 
 	// include
-	require 'config.php';
+	require_once 'config.php';
 
 	// add new stuff
 	$id = $database->insert('items', [
