@@ -11,49 +11,10 @@ require_once 'vendor/autoload.php';
 
 
 // global variables
-$base_url = 'http://localhost:8888';
+require_once 'variables.php';
 
-// Using Medoo namespace.
-use Medoo\Medoo;
-
-// connect to db
-$database = new Medoo([
-	'database_type' => 'mysql',
-	'database_name' => 'todo',
-	'server'        => 'localhost',
-	'username'      => 'root',
-	'password'      => 'root',
-	'charset'       => 'utf8'
-]);
-
+// connect to database
+require_once 'database.php';
 
 // global functions
-function show_404() {
-	header("HTTP/1.0 404 Not Found");
-	include_once "404.php";
-	die();
-}
-
-function get_item() {
-	// if we have no id, or if id is empty
-	if ( ! isset($_GET['id']) || empty($_GET['id']) ) {
-		return false;
-	}
-
-	global $database;
-
-	$item = $database->get("items", "text", [
-		"id" => $_GET['id']
-	]);
-
-	if ( ! $item ) {
-		return false;
-	}
-
-	return $item;
-}
-
-
-function is_ajax() {
-	return ( !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest' );
-}
+require_once 'functions.php';
