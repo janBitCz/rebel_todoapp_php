@@ -28,15 +28,13 @@ $database = new Medoo([
 
 
 // global functions
-function show_404()
-{
+function show_404() {
 	header("HTTP/1.0 404 Not Found");
 	include_once "404.php";
 	die();
 }
 
-function get_item()
-{
+function get_item() {
 	// if we have no id, or if id is empty
 	if ( ! isset($_GET['id']) || empty($_GET['id']) ) {
 		return false;
