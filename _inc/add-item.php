@@ -1,13 +1,19 @@
 <?php
 
-	// include
 	require_once 'config.php';
+	
+	// input monitoring
+	$task = htmlspecialchars($_POST['message']);
 
-	// add new stuff
-	$id = $database->insert('items', [
-		'text' => $_POST['message'],
-		
-	]);
+	// add new task
+	if (!$task){
+		die();
+
+	} else {
+		$id = $database->insert('items', [
+		'text' => $task,
+		]);
+	}
 
 	// success?
 	if ( ! $id ) die('error');
