@@ -56,7 +56,7 @@
 
     /**
      * EDIT FORM
-     */ 
+     */
 
     $("#edit-form").find("#text").select();
 
@@ -67,5 +67,4 @@
     $("#delete-form").on("submit", function (event) {
         return confirm("Jste si jistý?");
     });
-
 })(jQuery);
